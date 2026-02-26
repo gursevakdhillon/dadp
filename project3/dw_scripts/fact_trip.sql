@@ -6,7 +6,7 @@ WITH
     FILE_FORMAT = [SynapseParquetFormat]
 )
 AS 
-SELECT TOP 100 
+SELECT
 SUBSTRING(trip_id,2,LEN(trip_id) -2) AS trip_id,
 SUBSTRING(rideable_type,2,LEN(rideable_type)-2) AS rideable_type,
 start_at AS started_at,
