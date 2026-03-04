@@ -1,4 +1,4 @@
-CREATE EXTERNAL TABLE [dbo].[station] (
+CREATE EXTERNAL TABLE [dbo].[stg_station] (
 	[station_id] nvarchar(400),
 	[name] nvarchar(400),
 	[latitude] float,
@@ -12,5 +12,5 @@ CREATE EXTERNAL TABLE [dbo].[station] (
 GO
 
 
-SELECT TOP 100 * FROM [dbo].[station]
+SELECT TOP 100 * FROM [dbo].[stg_station]
 GO
