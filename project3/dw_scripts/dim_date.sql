@@ -15,8 +15,8 @@ AS
 WITH bounds AS
 (
     SELECT
-        CAST(MIN(start_at) AS date) AS min_dt,
-        CAST(MAX(ended_at) AS date) AS max_dt
+        MIN(start_at) AS min_dt,
+        MAX(ended_at) AS max_dt
     FROM dbo.stg_trip
 ),
 -- Build a tally table 0..99999 using only VALUES + CROSS JOIN
@@ -33,6 +33,7 @@ dates AS
 )
 SELECT
     CONVERT(int, CONVERT(char(8), d, 112))                                          AS date_id,
+    CAST(d AS datetime)                                                             AS date_time,
     CAST(d AS date)                                                                 AS [date],
     DATEPART(day, d)                                                                AS [day],
     DATENAME(weekday, d)                                                            AS day_name,
