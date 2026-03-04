@@ -6,7 +6,8 @@
 2) Extract Step
 
 screenshot of the 4 files in the datalake
-<img width="864" height="398" alt="image" src="https://github.com/user-attachments/assets/8d8fc756-92d5-4db5-9a20-83d73f21ac8b" />
+<img width="890" height="268" alt="image" src="https://github.com/user-attachments/assets/5d961cf2-58ba-4964-a63c-82058defda51" />
+
 
 3) Load Step
 - Scripts under stage_tables_scripts folder
