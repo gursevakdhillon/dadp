@@ -1,6 +1,7 @@
 1) Star Schema Design
  
-<img width="581" height="509" alt="image" src="https://github.com/user-attachments/assets/f407eaf7-8f4a-4ae1-83a3-8420a59ceb6b" />
+<img width="586" height="511" alt="image" src="https://github.com/user-attachments/assets/9f26907a-f331-4276-8065-0d49013bc9ad" />
+
 
 2) Extract Step
 
