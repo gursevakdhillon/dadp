@@ -7,8 +7,8 @@ IF NOT EXISTS (SELECT * FROM sys.external_file_formats WHERE name = 'SynapseDeli
 			))
 GO
 
-IF NOT EXISTS (SELECT * FROM sys.external_data_sources WHERE name = 'divvyfs_storagedivvy_dfs_core_windows_net') 
-	CREATE EXTERNAL DATA SOURCE [divvyfs_storagedivvy_dfs_core_windows_net] 
+IF NOT EXISTS (SELECT * FROM sys.external_data_sources WHERE name = 'divvy-file-system_divvydl_dfs_core_windows_net') 
+	CREATE EXTERNAL DATA SOURCE [divvy-file-system_divvydl_dfs_core_windows_net] 
 	WITH (
 		LOCATION = 'abfss://divvyfs@storagedivvy.dfs.core.windows.net' 
 	)
