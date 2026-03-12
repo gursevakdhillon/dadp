@@ -18,12 +18,12 @@ start_at AS started_at,
 ended_at AS ended_at,
 DATEDIFF(MINUTE, start_at,ended_at) AS trip_duration
 FROM dbo.stg_trip st
-LEFT JOIN dim_datetime dd
-ON st.start_at = dd.date_time
-LEFT JOIN dbo.dim_rider r
+JOIN dim_datetime dd
+ON CAST(st.start_at AS date) = dd.date
+JOIN dbo.dim_rider r
 ON st.rider_id  = r.rider_id
-LEFT JOIN dim_station ds1
-ON  st.start_station_id = ds1.station_id
-LEFT JOIN dim_station ds2
-ON st.end_station_id = ds2.station_id
+JOIN dim_station ds_start
+ON  st.start_station_id = ds_start.station_id
+JOIN dim_station ds_end
+ON st.end_station_id = ds_end.station_id
 
