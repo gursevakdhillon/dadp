@@ -9,4 +9,5 @@ Goal of this project is to create a datalake based solution for managing allt he
 Current Architecture:
 
 Proposed Architecture:
-<img width="988" height="711" alt="image" src="https://github.com/user-attachments/assets/561bc884-0697-4cf4-bffd-d6ae88ebe8c6" />
+<img width="709" height="399" alt="image" src="https://github.com/user-attachments/assets/82574664-7c86-4906-b66d-e3d13a6f6ef1" />
+
