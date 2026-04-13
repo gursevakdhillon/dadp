@@ -1,5 +1,5 @@
 
 1) PDF of Star Schema
- - pdf file located under Data Architecture Design
+ - pdf file located under architecture_design folder
 2) Azure Databricks Notebook
-   - .py notebook located under notebooks 
+   - .py and .ipynb notebook located under notebooks foler
